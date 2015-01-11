@@ -21,15 +21,9 @@ public class tenthousandonethprime {
         int primeCounter = 0;
         double[] primes = new double[32000];
 
-        primes[0] = 2;
-        primes[1] = 3;
-        primes[2] = 5;
-        counter = 6;
-        primeCounter = 3;
-
         while (primes[10000] == 0) {
             if (isPrime(counter)) {
-                primes[primeCounter-1] = counter;
+                primes[primeCounter] = counter;
                 primeCounter++;
             }
 
